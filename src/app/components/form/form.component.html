@@ -1,0 +1,25 @@
+<div class="row">
+    <button type="button" class="btn btn-custom btn-light mt-2 col-8 mx-auto" (click)="toggleDisplay()">
+        New Thought</button>
+</div>
+@if (display) {
+    <div class="overlay">
+        <div class="form-popup col-6 mx-auto p-3 rounded">
+            <div>
+        <h4 class="form-label">Title</h4>
+        <input type="text" class="form-control"  [(ngModel)]="formPost.title"/>
+        </div>
+        <div>
+        <h4 class="form-label">Thought</h4>
+        <textarea type="text" class="form-control" [(ngModel)]="formPost.body" rows="4"></textarea>
+        </div>
+        <div class="mt-4 d-grid gap-2">
+            <button type="button" class="btn btn-custom btn-light" (click)="submitForm()" (click)="toggleDisplay()">Add Post</button>
+        </div>
+    </div>
+    </div>
+
+}
+
+
+

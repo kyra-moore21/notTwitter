@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playwrite+IE:wght@100..400&display=swap');
+
+html, body{
+    background-color: #F3F1F7;
+}
+h1{
+    font-family: "Playwrite IE", cursive;
+    font-optical-sizing: auto;
+    color: rgb(3, 169, 244);
+}
+
+h2, h3, h4, h5, h6, p{
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+}

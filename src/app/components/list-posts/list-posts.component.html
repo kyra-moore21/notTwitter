@@ -1,0 +1,6 @@
+<app-form (CreatedEvent)="addItem($event)"></app-form>
+<div class="row">
+    @for (i of AllPosts; track $index) {
+            <app-single-post (deleteEvent)="deleteItem($event)" [displayPost]="i"></app-single-post>
+    }
+</div>
